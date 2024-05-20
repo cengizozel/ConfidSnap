@@ -195,7 +195,7 @@ def main():
         hide_box.image = None  # Remove reference to the image
         reveal_box.config(image='', text='Reveal')
         reveal_box.image = None  # Remove reference to the image
-        upload_label.config(text="Drop or click to add images")
+        upload_label.config(text="Drag and drop an image!")
         global processed_image
         global original_image
         global original_image_path
@@ -265,7 +265,7 @@ def main():
 
     clear_button = ttk.Button(bottom_frame, text="Clear", command=clear_images, style="TButton.Clear.TButton")
     clear_button.grid(row=0, column=0, sticky="w")
-    upload_label = ttk.Label(bottom_frame, text="Drop or click to add images", anchor="center", style="TLabel")
+    upload_label = ttk.Label(bottom_frame, text="Drag and drop an image!", anchor="center", style="TLabel")
     upload_label.grid(row=0, column=1, sticky="ew")
     save_button = ttk.Button(bottom_frame, text="Save", command=save_image, style="TButton.Save.TButton")
     save_button.grid(row=0, column=2, sticky="e")
